@@ -2,21 +2,10 @@ Considera una lista/array de ovejas. Cada oveja tiene un nombre y un color. Haz 
 
 Por ejemplo, si tenemos las ovejas:
 
-const ovejas = [
-  { name: 'Noa', color: 'azul' },
-  { name: 'Euge', color: 'rojo' },
-  { name: 'Navidad', color: 'rojo' },
-  { name: 'Ki Na Ma', color: 'rojo'},
-  { name: 'AAAAAaaaaa', color: 'rojo' },
-  { name: 'Nnnnnnnn', color: 'rojo'}
-]
+![image](https://user-images.githubusercontent.com/117229843/205487623-7308732a-2b48-40a3-b36d-9cd6b8a8796d.png)
 
 Al ejecutar el método debería devolver lo siguiente:
 
-const ovejasFiltradas = contarOvejas(ovejas)
+![image](https://user-images.githubusercontent.com/117229843/205487640-afc77db9-d9aa-4193-a840-b623673fe86a.png)
 
-console.log(ovejasFiltradas)
-
-// [{ name: 'Navidad', color: 'rojo' },
-//  { name: 'Ki Na Ma', color: 'rojo' }]
 Recuerda. Debe contener las dos letras 'a' y 'n' en el nombre. No cuentes ovejas que sólo tenga una de las letras, debe tener ambas.
