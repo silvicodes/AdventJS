@@ -1,5 +1,7 @@
-export default function listGifts(letter) {
- const arrCarta = letter.split(" ");
+const carta = 'bici coche balón _playstation bici  coche   peluche';
+
+function listGifts(letter) {
+  const arrCarta = letter.split(" ");
   return arrCarta.filter((regalo) => {
     let value = regalo.startsWith("_")
     if (value !== true && regalo !=="") return regalo !== value
@@ -8,5 +10,7 @@ export default function listGifts(letter) {
     contador[regalo] = (contador[regalo] || 0) + 1;
     return contador
   }, {});
- return {}
 }
+
+const regalos = listGifts(carta)
+console.log(regalos)
