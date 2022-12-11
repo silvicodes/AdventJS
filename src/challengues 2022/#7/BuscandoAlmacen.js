@@ -1,18 +1,10 @@
-function iterate(obj) {
-  let res = [];
-  for (let property in obj) {
-    const child = obj[property];
-    if (typeof child === 'object') {
-      res = [...res, ...iterate(child)]
-    }
-    res.push(child);
-  }
-  return res;
+export default function contains(store, product) {
+ const stock = iterateStore(store);
+ // console.log(stock)
+  return stock.includes(product)
 }
 
-function contains(store, product) {
-  return iterate(store).some((item) => item === product)
-}
+console.log(contains(alamcen,'camiseta') //true
 
 const almacen = {
   'estanteria1': {
