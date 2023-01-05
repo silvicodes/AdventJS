@@ -6,3 +6,8 @@ Hay que tener en cuenta las letras en mayúscula y que las letras con acento y d
 
 Vamos a ver unos ejemplos de frases:
 
+pangram('Extraño pan de col y kiwi se quemó bajo fugaz vaho') // true
+pangram('Jovencillo emponzoñado y con walkman: ¡qué figurota exhibes!') // true
+
+pangram('Esto es una frase larga pero no tiene todas las letras del abecedario') // false
+pangram('De la a a la z, nos faltan letras') // false
